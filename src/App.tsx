@@ -1,13 +1,14 @@
 import './App.css'
+import ClickBasic from './component/Click-Basic'
+import JSXBasic from './component/JSX-Basic'
 
 function App() {
-  return (
-    <>
-        <div>
-            <h1>React App</h1>
-        </div>
-    </>
-  )
+    return (
+        <>
+            <JSXBasic />
+            <ClickBasic></ClickBasic>
+        </>
+    )
 }
 
 export default App
