@@ -18,12 +18,12 @@ const list: { id: number; name: string; }[] = [
     { id: 3, name: 'Java' }
 ]
 
-function getName() {
+const getName = () => {
     return '学习React';
 }
 
 // 自定义函数（根据类型不同返回不同结果）
-function getArticleTem() {
+const getArticleTem = () => {
     switch (articleType) {
         case 0:
             return <h5>学习React</h5>
@@ -36,10 +36,11 @@ function getArticleTem() {
     }
 }
 
-function JSXBasic() {
+const JSXBasic = () => {
     return (
-        <>
-            {/* 1、使用引号传递字符串 */}
+        <div>
+            <h1>{'------一、使用引号传递字符串-----'}</h1>
+
             <h5>
                 {'学习JSX基础语法'}
             </h5>
@@ -75,7 +76,7 @@ function JSXBasic() {
 
             {/* 7、复杂条件渲染 */}
             {getArticleTem()}
-        </>
+        </div>
     )
 }
 

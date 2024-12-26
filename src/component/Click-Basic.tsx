@@ -7,28 +7,30 @@
 */
 
 // 基础事件绑定
-function handleClick() {
+const handleClick = () => {
     console.log('基础事件绑定');
 }
 
 // 事件参数e
-function handleClick1(e: any) {
+const handleClick1 = (e: any) => {
     console.log('事件参数e', e);
 }
 
 // 传递自定义参数
-function handleClick2(name: string) {
+const handleClick2 = (name: string) => {
     console.log('传递自定义参数', name);
 }
 
 // 传递自定义参数和事件参数e
-function handleClick3(name: string, e: any) {
+const handleClick3 = (name: string, e: any) => {
     console.log('传递自定义参数和事件参数e', name, e);
 }
 
-function ClickBasic() {
+const ClickBasic = () => {
     return (
-        <>
+        <div>
+            <h1>{'------二、事件绑定-----'}</h1>
+
             {/* 1、基础绑定 */}
             <button onClick={handleClick}>基础事件绑定</button><br />
 
@@ -40,7 +42,7 @@ function ClickBasic() {
 
             {/* 4、传递自定义参数和事件参数e */}
             <button onClick={(e) => handleClick3('React', e)}>传递自定义参数和事件参数e</button><br />
-        </>
+        </div>
     )
 }
 
