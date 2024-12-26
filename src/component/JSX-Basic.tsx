@@ -8,35 +8,35 @@ JSX 基础
     6、基础条件渲染（逻辑与&&或者三目运算符）
     7、复杂条件渲染（自定义函数 + 判断）
 */
-let count: number = 123
-const flag: boolean = false;
-// 定义类型
-const articleType: number = 1 // 0 1 2
-const list: { id: number; name: string; }[] = [
-    { id: 1, name: 'Vue' },
-    { id: 2, name: 'React' },
-    { id: 3, name: 'Java' }
-]
-
-const getName = () => {
-    return '学习React';
-}
-
-// 自定义函数（根据类型不同返回不同结果）
-const getArticleTem = () => {
-    switch (articleType) {
-        case 0:
-            return <h5>学习React</h5>
-        case 1:
-            return <h5>学习Vue</h5>
-        case 2:
-            return <h5>学习Java</h5>
-        default:
-            return <h5>学习React</h5>
-    }
-}
-
 const JSXBasic = () => {
+    let count: number = 123
+    const flag: boolean = false;
+    // 定义类型
+    const articleType: number = 1 // 0 1 2
+    const list: { id: number; name: string; }[] = [
+        { id: 1, name: 'Vue' },
+        { id: 2, name: 'React' },
+        { id: 3, name: 'Java' }
+    ]
+
+    const getName = () => {
+        return '学习React';
+    }
+
+    // 自定义函数（根据类型不同返回不同结果）
+    const getArticleTem = () => {
+        switch (articleType) {
+            case 0:
+                return <h5>学习React</h5>
+            case 1:
+                return <h5>学习Vue</h5>
+            case 2:
+                return <h5>学习Java</h5>
+            default:
+                return <h5>学习React</h5>
+        }
+    }
+
     return (
         <div>
             <h1>{'------一、使用引号传递字符串-----'}</h1>

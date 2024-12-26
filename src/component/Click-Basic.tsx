@@ -5,28 +5,28 @@
     3、传递自定义参数 
     4、传递自定义参数和事件参数e 
 */
-
-// 基础事件绑定
-const handleClick = () => {
-    console.log('基础事件绑定');
-}
-
-// 事件参数e
-const handleClick1 = (e: any) => {
-    console.log('事件参数e', e);
-}
-
-// 传递自定义参数
-const handleClick2 = (name: string) => {
-    console.log('传递自定义参数', name);
-}
-
-// 传递自定义参数和事件参数e
-const handleClick3 = (name: string, e: any) => {
-    console.log('传递自定义参数和事件参数e', name, e);
-}
-
 const ClickBasic = () => {
+
+    // 基础事件绑定
+    const handleClick = () => {
+        console.log('基础事件绑定');
+    }
+
+    // 事件参数e
+    const handleClick1 = (e: any) => {
+        console.log('事件参数e', e);
+    }
+
+    // 传递自定义参数
+    const handleClick2 = (name: string) => {
+        console.log('传递自定义参数', name);
+    }
+
+    // 传递自定义参数和事件参数e
+    const handleClick3 = (name: string, e: any) => {
+        console.log('传递自定义参数和事件参数e', name, e);
+    }
+
     return (
         <div>
             <h1>{'------二、事件绑定-----'}</h1>
