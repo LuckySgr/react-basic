@@ -21,6 +21,7 @@ import { useState } from "react";
 const UseStateBasic = () => {
     const [count, setCount] = useState(0);
     const [form, setForm] = useState({ name: 'React', age: 18 });
+    const [value, setValue] = useState('受控表单绑定');
 
     const handleClick = () => {
         setForm({
@@ -36,9 +37,13 @@ const UseStateBasic = () => {
             {/* 计数器 */}
             <h5>{count}</h5>
             <button onClick={() => setCount(count + 1)}>+</button>
-            <button onClick={() => setCount(count - 1)}>-</button>
+            <button onClick={() => setCount(count - 1)}>-</button><br />
             {/* 修改对象状态 */}
             <button onClick={handleClick}>修改对象状态---{form.name}</button>
+            {/* 受控表单绑定 */}
+            <h5>{value}</h5>
+            <input type="text" value={value} onChange={(e) => setValue(e.target.value)} /><br/>
+            <input type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
         </div>
     );
 }
