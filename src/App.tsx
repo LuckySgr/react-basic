@@ -1,6 +1,6 @@
 import './App.css'
 import ClickBasic from './component/Click-Basic'
-import CommBasic from './component/comm/Comm-Basic'
+import CommBasic from './component/Comm-Basic'
 import GetDOMBasic from './component/GetDOM-Basic'
 import JSXBasic from './component/JSX-Basic'
 import UseStateBasic from './component/UseState-Basic'
