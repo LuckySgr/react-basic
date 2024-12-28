@@ -1,12 +1,15 @@
 // import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
 
 // 导入store
 import store from './store'
 // 使用react-redux中的Provider组件，将store传递给App组件
 import { Provider } from 'react-redux'
+
+// 路由
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
 
 createRoot(document.getElementById('root')!).render(
     /* 
@@ -19,7 +22,8 @@ createRoot(document.getElementById('root')!).render(
     */
     // <StrictMode>
     <Provider store={store}>
-        <App />
+        {/* 路由绑定 */}
+        <RouterProvider router={router} />
     </Provider>
     // </StrictMode>,
 )

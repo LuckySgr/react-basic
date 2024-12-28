@@ -8,7 +8,7 @@ import ReduxBasic from './component/Redux-Basic'
 import UseEffectBasic from './component/UseEffect-Basic'
 import UseStateBasic from './component/UseState-Basic'
 
-function App() {
+const App = () => {
     return (
         <>
             <JSXBasic />
