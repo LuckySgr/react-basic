@@ -5,6 +5,7 @@ import GetDOMBasic from './component/GetDOM-Basic'
 import HookBasic from './component/Hook-Basic'
 import JSXBasic from './component/JSX-Basic'
 import ReduxBasic from './component/Redux-Basic'
+import RouterBasic from './component/Router-Basic'
 import UseEffectBasic from './component/UseEffect-Basic'
 import UseStateBasic from './component/UseState-Basic'
 
@@ -19,6 +20,7 @@ const App = () => {
             <UseEffectBasic></UseEffectBasic>
             <HookBasic></HookBasic>
             <ReduxBasic></ReduxBasic>
+            <RouterBasic></RouterBasic>
         </>
     )
 }

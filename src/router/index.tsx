@@ -1,22 +1,33 @@
 import App from "../App";
-import ClickBasic from '../component/Click-Basic'
-import CommBasic from '../component/Comm-Basic'
-import GetDOMBasic from '../component/GetDOM-Basic'
-import HookBasic from '../component/Hook-Basic'
-import JSXBasic from '../component/JSX-Basic'
-import ReduxBasic from '../component/Redux-Basic'
-import UseEffectBasic from '../component/UseEffect-Basic'
-import UseStateBasic from '../component/UseState-Basic'
+import ClickBasic from '../component/Click-Basic';
+import CommBasic from '../component/Comm-Basic';
+import GetDOMBasic from '../component/GetDOM-Basic';
+import HookBasic from '../component/Hook-Basic';
+import JSXBasic from '../component/JSX-Basic';
+import NotFound from "../component/NotFound";
+import ReduxBasic from '../component/Redux-Basic';
+import UseEffectBasic from '../component/UseEffect-Basic';
+import UseStateBasic from '../component/UseState-Basic';
 
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App />
+        element: <App />,
+        children: [
+            {
+                index: true,
+                element: <JSXBasic />
+            },
+            {
+                path: '/comm',
+                element: <CommBasic />
+            }
+        ]
     },
     {
-        path: '/click',
+        path: '/click/:id/:name',
         element: <ClickBasic />
     },
     {
@@ -46,6 +57,10 @@ const router = createBrowserRouter([
     {
         path: '/usestate',
         element: <UseStateBasic />
+    },
+    {
+        path: '*',
+        element: <NotFound />
     }
 ])
 

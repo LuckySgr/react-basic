@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+
 /* 
 事件绑定
     1、基础绑定 
@@ -6,6 +8,11 @@
     4、传递自定义参数和事件参数e 
 */
 const ClickBasic = () => {
+    // 获取路由参数
+    // params传参
+    const param = useParams();
+    console.log('路由参数', param);
+
 
     // 基础事件绑定
     const handleClick = () => {

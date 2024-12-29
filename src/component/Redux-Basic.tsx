@@ -54,7 +54,7 @@ const ReduxBasic = () => {
     */
     return (
         <div>
-            <h1>{'------六、Redux 基本使用 -----'}</h1>
+            <h1>{'------七、Redux 基本使用 -----'}</h1>
 
             <h5>{'------1.同步操作 -----'}</h5>
             <button onClick={() => dispatch(increment())}>+</button>

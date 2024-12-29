@@ -1,3 +1,5 @@
+import { useSearchParams } from "react-router-dom";
+
 /* 
 JSX 基础
     1、使用引号传递字符串
@@ -9,6 +11,13 @@ JSX 基础
     7、复杂条件渲染（自定义函数 + 判断）
 */
 const JSXBasic = () => {
+    // 获取路由参数
+    // searchParams传参
+    const [parms] = useSearchParams();
+    let id = parms.get('id');
+    let name = parms.get('name');
+    console.log('路由参数', id, name);
+
     let count: number = 123
     const flag: boolean = false;
     // 定义类型
