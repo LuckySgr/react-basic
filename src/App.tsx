@@ -1,4 +1,5 @@
 import './App.css'
+import AntdListBasic from './component/Antd-List-Basic'
 import ClickBasic from './component/Click-Basic'
 import CommBasic from './component/Comm-Basic'
 import GetDOMBasic from './component/GetDOM-Basic'
@@ -21,6 +22,7 @@ const App = () => {
             <HookBasic></HookBasic>
             <ReduxBasic></ReduxBasic>
             <RouterBasic></RouterBasic>
+            <AntdListBasic></AntdListBasic>
         </>
     )
 }
